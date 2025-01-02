@@ -10,12 +10,12 @@ const Cart = ({ CartItem, addToCart, decreaseQty }) => {
     <>
       <section className='cart-items'>
         <div className='container d_flex'>
-          {/* if hamro cart ma kunai pani item xaina bhane no diplay */}
+          {}
 
           <div className='cart-details'>
-            {CartItem.length === 0 && <h1 className='no-items product'>No Items are add in Cart</h1>}
+            {CartItem.length === 0 && <h1 className='no-items product'>No Items are added in Cart</h1>}
 
-            {/* yasma hami le cart item lai display garaaxa */}
+            {}
             {CartItem.map((item) => {
               const productQty = item.price * item.qty
 
@@ -25,8 +25,8 @@ const Cart = ({ CartItem, addToCart, decreaseQty }) => {
                     <img src={item.cover} alt='' />
                   </div>
                   <div className='cart-details'>
-                    <h3>{item.name}</h3>
-                    <h4>
+                    <h3 class="sub-heading">{item.name}</h3>
+                    <h4 className='small-heading'>
                       ${item.price}.00 * {item.qty}
                       <span>${productQty}.00</span>
                     </h4>
@@ -37,9 +37,7 @@ const Cart = ({ CartItem, addToCart, decreaseQty }) => {
                         <i className='fa-solid fa-xmark'></i>
                       </button>
                     </div>
-                    {/* stpe: 5 
-                    product ko qty lai inc ra des garne
-                    */}
+                    {}
                     <div className='cartControl d_flex'>
                       <button className='incCart' onClick={() => addToCart(item)}>
                         <i className='fa-solid fa-plus'></i>
@@ -57,10 +55,10 @@ const Cart = ({ CartItem, addToCart, decreaseQty }) => {
           </div>
 
           <div className='cart-total product'>
-            <h2>Cart Summary</h2>
+            <h2 className="secondary-heading">Cart Summary</h2>
             <div className=' d_flex'>
-              <h4>Total Price :</h4>
-              <h3>${totalPrice}.00</h3>
+              <h4 className="small-heading">Total Price :</h4>
+              <h3 className='sub-heading'>${totalPrice}.00</h3>
             </div>
           </div>
         </div>
