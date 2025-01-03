@@ -39,3 +39,7 @@ Access the app at http://localhost:3000.
 <li>React Router: For page routing.</li>
 <li>CSS: Styling and layout.</li>
 </ul>
+
+![Screenshot 2025-01-03 082736](https://github.com/user-attachments/assets/652fa462-55a9-4099-b57a-4c94f1a876a5)
+![Screenshot 2025-01-03 082854](https://github.com/user-attachments/assets/a11b352d-0c11-4f03-8e17-680c34b0d0fe)
+
